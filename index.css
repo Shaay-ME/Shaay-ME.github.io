@@ -1,0 +1,170 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+/* Styles */
+*
+{
+    padding:0;
+    margin:0;
+    
+    box-sizing: border-box;
+    
+    
+    
+    color: white;
+}
+
+body,html
+{
+    width: 100%;
+    height: 100%;
+    
+    font-size: 16px;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(sN5aMGR.jpg);
+    background-attachment: fixed;
+    
+    
+    
+}
+main
+{
+    text-align: center;
+    
+    width: 100%;
+    height: 100%;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgba(0,0,0,0.2);
+    
+    box-shadow: inset 0px 0px 8px 4px rgba(0,0,0,0.3);
+}
+h1
+{
+    font-size: 8em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    
+    font-family: 'Poiret One', cursive;
+
+}
+.navvy
+{
+    display:inline-block;
+    
+    width: 120px;
+    height: 120px;
+    
+    display:inline-flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    transform: rotate(45deg);
+    background-color: transparent;
+    border: 4px solid white;
+    transition: all .5s;
+    
+    font-family: 'Indie Flower', cursive;
+
+}
+.navvy:hover
+{
+    cursor: pointer;
+    color: black;
+    box-shadow: inset 150px -150px  white;
+    
+    border-color: transparent;
+}
+.navvy:hover p1
+{
+    color:black;
+}
+p1
+{
+    display:inline-block;
+    transform: rotate(-45deg);
+    
+    font-size: 2em;
+    
+    
+    
+}
+p
+{
+    margin-bottom: 1.5em;
+    font-size: 3.5em;
+    font-family: 'Poiret One', cursive;
+
+}
+#modal
+{
+    width:100%;
+    height: 100%;
+    
+    position:fixed;
+    z-index: 1;
+    
+    background-color: rgba(0,0,0,0.7);
+    
+ 
+   
+    /* Anims */
+    animation-name: blendAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+    
+    /* Alignment */
+    display:none;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#modalContent
+{
+    background-color: rgb(71,72,74);
+    padding: 16px;
+    
+}
+
+
+
+/* Animations */
+@keyframes blendAnimation
+{
+    from{opacity:0;}
+    to{opacity: 1;}
+}
+/* Queries */
+@media (max-width: 600px)
+{
+    h1
+    {
+        font-size: 1.25em;
+        margin-bottom:1em;
+    }
+    p
+    {
+        font-size: 1.25em;
+        
+        margin-bottom: 3em;
+    }
+}
