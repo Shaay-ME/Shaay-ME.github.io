@@ -84,7 +84,7 @@ h1
 {
     cursor: pointer;
     color: black;
-    box-shadow: inset 150px -150px  white;
+    box-shadow: inset 150px 150px  white;
     
     border-color: transparent;
 }
