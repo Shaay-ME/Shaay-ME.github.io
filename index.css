@@ -78,6 +78,9 @@ h1
     transition: all .5s;
     
     font-family: 'Indie Flower', cursive;
+    
+    min-width: 120px;
+    min-height: 120px;
 
 }
 .navvy:hover
